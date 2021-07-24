@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cadastro-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg-form{
+  width: 300px;
+  padding: 20px 16px;
+  background-color: #2F1242;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+form div{
+  margin: 16px;
+}
+
+label{
+  display: inline-block;
+  width: 120px;
+  color: #FFF;
+}
+
+input{
+  width: 200px;
+  height: 30px;
+  border-radius: 2px;
+  display: block;
+  margin-top: 2px;
+  padding-left: 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
+}
+/*#registroPet::placeholder,
+#nomePet::placeholder,
+#tipoPet::placeholder,
+#idadePet::placeholder{
+  color: #CCC;
+}*/
+
+
+#btn-envio input{
+  display: inline-block;
+  width: 98px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0;
+  background-color: #DDCBFD;
+  color: #2F1242;
+  font-weight: 700;
+  border: 0;
+}
+#btn-envio input:hover{
+  background-color: #FFF;
+  color: #2F1242;
+}
+
+#titulo{
+ display: flex;
+ justify-content: center;
+ background-color: #dcd9df;
+ height: 100px;
+ margin-bottom: 25px;
+ font-family: 'Baloo 2', cursive;
+ flex-direction: column;
+}
+
+#principal{
+  display: flex;
+}
+
+#tabela{
+  background-color: #dcd9df;
+  width: 160vh;
+  border-radius: 10px;
+}
+
+#tabelaProdutos{
+  background-color: #dcd9df;
+  width: 160vh;
+  border-radius: 10px;
+}
+
+
+
+@media ( max-width:800px) {
+ 
+  .cadastro-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #principal{
+    display: block;
+  }
+
+  .cadastro-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

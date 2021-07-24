@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>Desafio HC - Cadastro de Produtos</title>
+  </head>
+  <body onload="listarCadastrosProdutos()">
+    <header id="titulo">
+      <h1>Cadastro de Produtos</h1>
+      <div style="clear: both"></div>
+      <a href="index.html">Voltar</a>
+      <a href="#" onclick="limparStorageProdutos()">Limpar Dados</a>
+    </header>
+    <main id="principal">
+      <div class="cadastro-content">
+        <div class="bg-form">
+          <form action="#">
+            <div>
+              <label>Código</label>
+              <input type="text" id="id" placeholder="Ex: 01" />
+            </div>
+
+            <div>
+              <label>Descrição:</label>
+              <input
+                type="text"
+                id="description"
+                placeholder="Descrição do produto"
+                required="true"
+              />
+            </div>
+
+            <div>
+              <label>Preço:</label>
+              <input type="number" id="price" placeholder="0,00" />
+            </div>
+
+            <div>
+              <label>Quantidade:</label>
+              <input type="number" id="qtds" placeholder="1000" />
+            </div>
+
+            <div id="btn-envio">
+              <input id="botaoProduto" type="button" value="Cadastrar" />
+              <input type="reset" id="cancelar" class="" value="Cancelar" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="tabelaProdutos"></div>
+    </main>
+    <script src="script-produtos.js"></script>
+  </body>
+</html>
