@@ -32,8 +32,7 @@ function listarCadastros() {
 
   if (cadastros == null) {
     let element = document.getElementById('tabela')
-    element.innerHTML =
-      '<h3>Ainda não há cadastros realizados para consultar.</h3>'
+    element.innerHTML = 'Ainda não há cadastros realizados para consultar.'
   } else {
     cadastros = JSON.parse(cadastros)
 
