@@ -79,18 +79,21 @@ input{
 
 #principal{
   display: flex;
+  margin: 0 10px 0 10px;
 }
 
 #tabela{
   background-color: #dcd9df;
   width: 160vh;
   border-radius: 10px;
+  margin: 0 10px 0 10px;
 }
 
 #tabelaProdutos{
   background-color: #dcd9df;
   width: 160vh;
   border-radius: 10px;
+  margin: 0 10px 0 10px;
 }
 
 
